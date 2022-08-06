@@ -108,7 +108,7 @@ const Home: React.FC = () => {
             onClick={handleClick}
             whileTap={{ scale: 0.8 }}
           >
-            Let's Chat
+            {`Let's Chat`}
           </motion.button>
         </motion.section>
 
