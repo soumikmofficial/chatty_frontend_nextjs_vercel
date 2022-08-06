@@ -279,9 +279,15 @@ const ChatBox: React.FC<IProps> = ({ socket, onlineUsers }) => {
               <motion.button
                 type="submit"
                 whileTap={{ color: "gray", scale: 0.95 }}
-                className="px-2 py-1 bg-highlight rounded-md h-max text-base font-bold capitalize"
+                className={`px-2 py-1 rounded-md h-max  font-bold capitalize ${
+                  sendingMessage
+                   
+                   
+                    ? "bg-gray-500 text-sm"
+                    : "bg-highlight text-base"
+                }`}
               >
-                send
+                {sendingMessage ? "sending..." : "send"}
               </motion.button>
             </form>
           </motion.div>
