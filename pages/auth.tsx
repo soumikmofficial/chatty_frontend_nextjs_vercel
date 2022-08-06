@@ -32,7 +32,7 @@ const Auth = () => {
     }
   }, [user]);
 
-  if (user || loading) {
+  if (loading) {
     return null;
   }
 

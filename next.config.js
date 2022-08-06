@@ -2,9 +2,6 @@
 const nextConfig = {
   reactStrictMode: false,
   swcMinify: false,
-  async redirects() {
-    return [{ source: "/", destination: "/auth", permanent: true }];
-  },
 };
 
 module.exports = nextConfig;
