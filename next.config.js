@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
-  swcMinify: true,
+  swcMinify: false,
   async redirects() {
     return [{ source: "/", destination: "/auth", permanent: true }];
   },
