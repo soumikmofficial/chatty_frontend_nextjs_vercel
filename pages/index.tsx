@@ -75,7 +75,7 @@ const Home: React.FC = () => {
           variants={sectionVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col gap-5 w-full h-full mx-auto max-w-[400px] pt-4"
+          className="flex flex-col gap-5 w-full h-full mx-auto max-w-[400px] pt-4 px-5"
         >
           {featureList1.map((f, i) => {
             return (
@@ -116,7 +116,7 @@ const Home: React.FC = () => {
           variants={secondSectionVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col gap-5 w-full h-full mx-auto max-w-[400px]"
+          className="flex flex-col gap-5 w-full h-full mx-auto max-w-[400px] px-5"
         >
           {featureList2.map((f, i) => {
             return (
