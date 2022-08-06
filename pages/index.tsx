@@ -82,7 +82,7 @@ const Home: React.FC = () => {
               <motion.div
                 variants={messageVariants}
                 key={i}
-                className={` text-sm md:text-base w-max px-2 py-1 max-w-[280px] rounded-md ${
+                className={` text-base md:text-base w-max px-2 py-1 max-w-[280px] rounded-md ${
                   isEven(i) ? "ml-auto bg-gray-800" : "bg-secondary"
                 }`}
               >
@@ -123,7 +123,7 @@ const Home: React.FC = () => {
               <motion.div
                 variants={messageVariants}
                 key={i}
-                className={` text-sm md:text-base w-max px-2 py-1 max-w-[280px] rounded-md ${
+                className={` text-base md:text-base w-max px-2 py-1 max-w-[280px] rounded-md ${
                   isEven(i) ? "ml-auto bg-gray-800" : "bg-secondary"
                 }`}
               >
