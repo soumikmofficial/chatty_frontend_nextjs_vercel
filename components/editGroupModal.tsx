@@ -117,7 +117,7 @@ const EditGroupModal: React.FC<IProps> = ({ setIsEditModal, chat, socket }) => {
         initial="hidden"
         animate="visible"
         exit="hidden"
-        className="modal-content bg-secondary w-full h-full sm:h-max rounded-sm py-4 px-6 flex flex-col gap-4 md:w-2/5 max-w-[600px] sm:mt-5"
+        className="modal-content bg-secondary w-full h-full sm:h-max rounded-sm py-4 px-6 flex flex-col gap-10 md:w-3/5 max-w-[600px] sm:mt-5 "
       >
         <div className="header capitalize text-highlight font-bold flex gap-6 justify-end items-end">
           <button
@@ -171,12 +171,12 @@ const EditGroupModal: React.FC<IProps> = ({ setIsEditModal, chat, socket }) => {
         {refetchingUsers ? (
           <Spinner />
         ) : (
-          <div className="results w-full overflow-y-scroll grid grid-cols-2 gap-2 row-auto max-h-[220px]">
+          <div className="results w-full overflow-y-scroll grid grid-cols-1 sm:grid-cols-2 gap-2 row-auto max-h-[220px]">
             {searchedUsers?.map((user) => (
               <article
                 onClick={() => handleAdd(user)}
                 key={user._id}
-                className="singleSearchedUser py-2 px-3 flex items-center gap-5 bg-primary rounded-lg hover:bg-highlight cursor-pointer h-max"
+                className="singleSearchedUser py-2 px-3 flex items-center gap-5 bg-primary rounded-lg hover:bg-highlight cursor-pointer h-max w-full"
               >
                 {/* the avatar */}
                 <div className="avatar w-10 h-10 md:w-8 md:h-8 rounded-full overflow-hidden flex items-center justify-center flex-shrink-0 ">
@@ -192,8 +192,8 @@ const EditGroupModal: React.FC<IProps> = ({ setIsEditModal, chat, socket }) => {
                     {user.name}
                   </h3>
                   <p className="email text-sm">
-                    {user.email.length > 20
-                      ? `${user.email.slice(0, 17)}...`
+                    {user.email.length > 25
+                      ? `${user.email.slice(0, 24)}...`
                       : user.email}
                   </p>
                 </div>

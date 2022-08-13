@@ -83,7 +83,7 @@ const Search: React.FC = () => {
         {isLoading || (isRefetching && <Spinner />)}
         {/* the results */}
         {users && (
-          <div className="result flex flex-col gap-2 flex-grow overflow-scroll">
+          <div className="result flex flex-col gap-2 flex-grow overflow-y-scroll">
             {users.map((user) => {
               return (
                 <SingleSearchedUser
