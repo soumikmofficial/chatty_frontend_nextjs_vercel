@@ -34,7 +34,7 @@ const Profile = () => {
         className="top-0 left-0 w-full md:w-max bg-secondary px-4 md:px-8 py-5 rounded-md flex flex-col gap-10 md:gap-4 items-center h-screen md:h-max md:min-w-[300px] z-[500]"
       >
         {/* close button */}
-        <div className="ml-auto cursor-pointer">
+        <div className="ml-auto cursor-pointer mt-4">
           <AiOutlineClose fontSize={20} onClick={() => setProfileId(null)} />
         </div>
         {isLoading ? (
