@@ -1,11 +1,14 @@
-- register must show pop up for errors and successful registration
+## Frontend for Chat App: Chatty
 
--
--
+---
 
-animations
+### About the app:
 
-- when clicking profile button
-- when clicking search button
-- while hovering searched users
-- while hovering profile and logout
+_The app is a representation of a modern-day chat app with complete auth workflow, group chats, individual chats, live indicators, instant messaging with Socket.io, and more. The influences for this project stem from several youtube videos yet has its own individuality._
+
+**Features and packegs specific to the repo:**
+
+- NexJs is used as an react alternative. Data fetching is client side.
+- Minimalistic animations with Framer Motion.
+- Frontend deployed on vercel.
+- Build with Typescript.
