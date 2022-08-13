@@ -103,14 +103,14 @@ const CreateGroupModal: React.FC<IProps> = ({ setIsModal, socket }) => {
   }, [createdChat]);
 
   return (
-    <div className="fixed top-[8vh] w-full h-[92vh] left-0 bg-modal flex items-start justify-center z-40 ">
+    <div className="absolute w-full h-[92vh] bg-modal z-40 flex justify-center">
       {/* the central container */}
       <motion.div
         variants={modalVariants}
         initial="hidden"
         animate="visible"
         exit="hidden"
-        className="modal-content bg-secondary w-full h-full sm:h-max rounded-sm py-4 px-6 flex flex-col gap-4 md:w-2/5 max-w-[600px] min-w-[500px] sm:mt-5"
+        className="modal-content bg-secondary w-full h-full sm:h-max rounded-sm py-4 px-6 flex flex-col gap-4 md:w-2/5 max-w-[600px] sm:mt-5 "
       >
         <div className="header capitalize text-highlight font-bold flex justify-between item-center">
           <h3>create group</h3>
